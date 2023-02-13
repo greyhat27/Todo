@@ -3,6 +3,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html, body{
+    margin: 0;
+}
 .container{
     width: 550px;
     margin: auto;
@@ -203,7 +206,7 @@ span{
 @media only screen and (width <=550px){
     .container{
         width: 100%;
-        margin: auto;
+        margin:auto;
 
     }
     #input{
