@@ -139,6 +139,7 @@ span{
 #allTasks{
     width: 90%;
     margin: auto;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }

@@ -44,7 +44,7 @@ function addTolist(task){
     </div>
     <div id="edit-sec">
     <div id="edit" data-unique="${task.id}" data-text="${task.text}">Edit</div>
-    <img src="/resources/trash.png" alt="" class="delete" data-id="${task.id}">
+    <img src="./resources/trash.png" alt="" class="delete" data-id="${task.id}">
     </div>
     `
     listItem.append(li);
