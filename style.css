@@ -193,6 +193,9 @@ span{
     text-align: center;
     background-color: lightpink;
 }
+#no-task{
+    margin: auto;
+}
 .btn:hover{
     cursor: pointer;
     background-color: limegreen;
