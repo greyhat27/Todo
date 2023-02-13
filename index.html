@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/resources/sticky-note.png" type="image/x-icon">
+    <title>Todo list</title>
+</head>
+<body>
+    <!-- main container consisting of different elemets -->
+    <div class="container">
+        <!-- header section consists heading -->
+        <div class="header">
+            <img src="/resources/sticky-note.png" alt="" class="todo">
+            <h1> Todo list</h1>
+        </div>
+        <!-- input section to add task  -->
+        <div id="inp-cont">
+            <input type="text" id="input" placeholder="Add your task">
+            <img src="/resources/to-do-list.png" alt="" id="list-img">
+            <img src="/resources/add-button.png" alt="" class="add-btn" id="add-btn">
+        </div>
+        <div id="complete">
+            <img src="/resources/seen.png" alt="" id="seen">
+            <span>Complete all the tasks</span>
+        </div>
+        <div class="line"></div>
+        <!-- separate section for different tasks -->
+        <div id="allTasks">
+            <div>
+                <span>Total tasks: <span id="task-count" data-id="task-counter">0</span></span>
+            </div>
+            <div>
+                <span class="taskStatus" id="all">All</span>
+                <span class="taskStatus" id="uncomplete">Incomplete</span>
+                <span class="taskStatus" id="complete-task">Completed</span>    
+            </div>
+        </div>
+        <div class="line"></div>
+        <!-- task list -->
+        <ul id="list">
+
+        </ul>
+        <!-- modal box to edit task on click of edit option  -->
+        <div id="modal" class="modal">
+            <div id="modal-content">
+                <div id="modal-header">
+                    <p>Please Edit the task:</p>
+                </div>
+                <div id="edit-input">
+                    <input type="text" name="" id="edited">
+                </div>
+                <div id="modal-footer">
+                    <button class="btn btn-cancel">Cancel</button>
+                    <div id="okie" class="btn btn-ok">Ok</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- added script file  -->
+    <script src="script.js"></script>
+</body>
+</html>
